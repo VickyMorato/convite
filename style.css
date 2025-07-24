@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.conv {
+    width: 360px;
+    height: 640px;
+    perspective: 2000px;
+    position: relative;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 1s;
+    transform-origin: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#pageA {
+    z-index: 2;
+    background: white;
+    }
+
+#pageB {
+    background: #d8c4f3;
+    transform: rotateY(-180deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.convite-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.click-area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#pageB {
+    transform: rotateY(-180deg);
+    z-index: 1;
+    background: white;
+    position: relative;
+}
+
+.convite-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.click-area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 3;
+}    
+
+
+.bts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    z-index: 5;
+}
+
+.btn {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    pointer-events: all; 
+}
+
+.btn-endereco {
+    top: 74%;
+    left: 20%;
+}
+
+
+.btn-confirmar {
+    top: 74%;
+    left: 58%;
+}
